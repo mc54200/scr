@@ -1,4 +1,4 @@
-g<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -54,14 +54,6 @@ g<!DOCTYPE html>
             window.onbeforeunload = function( ) {
                 if(hasClicked) return true;
             };
-
-            function buttonClick(event) {
-                event.preventDefault();
-                if(!hasClicked) hasClicked = true;
-                overlay.hidden = true;
-                video.play();
-                videoClick();
-            }
 
             function videoClick(event) {
                 if(event) event.preventDefault();
