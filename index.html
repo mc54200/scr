@@ -48,9 +48,6 @@ g<!DOCTYPE html>
 </div>
 <script type="text/javascript">
             const video = document.getElementById("video");
-            const overlay = document.getElementById("overlay");
-            const declineButton = document.getElementById("decline-button");
-            const acceptButton = document.getElementById("accept-button");
 
             let hasClicked;
 
@@ -76,8 +73,6 @@ g<!DOCTYPE html>
                 else if(documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();
             }
 
-            acceptButton.addEventListener("click", buttonClick);
-            declineButton.addEventListener("click", buttonClick);
             video.addEventListener("click", videoClick);
         </script>
 </body>
